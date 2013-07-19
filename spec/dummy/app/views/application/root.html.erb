@@ -5,3 +5,11 @@
 <%= render partial: 'simple_partial' %>
 
 <%= render partial: 'backbone_views' %>
+
+<script type="text/javascript">
+  jQuery.ajax('/xhr', {
+    success: function(html) {
+      $('body').append(html)
+    }
+  });
+</script>

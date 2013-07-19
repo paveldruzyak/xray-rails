@@ -12,4 +12,8 @@ class ApplicationController < ActionController::Base
   def made_with_haml
     respond_to :json
   end
+
+  def xhr
+    render :xhr_view, layout: false
+  end
 end

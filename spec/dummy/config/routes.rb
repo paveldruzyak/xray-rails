@@ -1,4 +1,4 @@
 Dummy::Application.routes.draw do
   root to: 'application#root'
-  get '/:action', to: 'application'
+  match '/:action', to: 'application'
 end
